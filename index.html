@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>ghost buttons</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+    window.onload=function(){
+      //高斯模糊
+      var oBtnBlur = document.getElementsByTagName('button')[0];
+      //暗色大图
+      var oBtnDark = document.getElementsByTagName('button')[1];
+      //纯色背景
+      var oBtnPure = document.getElementsByTagName('button')[2];
+
+      var oBody = document.getElementsByTagName('body')[0];
+
+      oBtnBlur.onclick = function(){
+        oBody.style['backgroundImage'] = "url('img/bg_blur.jpg')";
+      }
+      oBtnDark.onclick = function(){
+        oBody.style['backgroundImage'] = "url('img/cover.jpg')";
+      }
+    }
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <h1>幽灵按钮</h1>
+        <div class="btn-group">
+            <button type="button">高斯模糊背景</button>
+            <button type="button">暗色大图背景</button>
+            <button type="button">纯色背景</button>
+        </div>
+
+
+        <a href="#" class="layout gb-basic">无特效</a>
+        <a href="http://capauwels.com/" class="layout gb-simple">简单的响应</a>
+        <a href="https://papaya.com.hr/" class="layout gb-transition">背景颜色切换</a>
+        <a href="http://thedistance.co.uk/" class="layout gb-radius">圆角2px</a>
+        <a href="http://www.nizuka.fr/" class="layout gb-border-highlight">
+            <span class="gb-line gb-line-top"></span>
+            <span class="gb-line gb-line-right"></span>
+            <span class="gb-line gb-line-bottom"></span>
+            <span class="gb-line gb-line-left"></span> 边框高亮
+        </a>
+        <a href="http://www.iuvo.si/" class="layout gb-border-flyin">
+            <span class="gb-line gb-line-top"></span>
+            <span class="gb-line gb-line-right"></span>
+            <span class="gb-line gb-line-bottom"></span>
+            <span class="gb-line gb-line-left"></span> 飞入
+        </a>
+        <a href="http://jaspur.nl/" class="layout gb-big-radius">圆角26px</a>
+        <a href="http://visage.co/" class="layout gb-transform">变形</a>
+        <a href="http://www.nois3.it/" class="layout gb-arrow">箭头右移</a>
+        <a href="http://www.studioup.it/#1" class="layout gb-scrollup">
+            <div class="gb-scrollup-hover"></div>
+            scroll up
+        </a>
+    </div>
+</body>
+
+</html>

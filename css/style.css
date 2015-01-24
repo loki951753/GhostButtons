@@ -1,0 +1,363 @@
+/*reset for this simple demo, DO NOT do it like this in a project*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+h1{
+	margin-bottom: 50px;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background: url(../img/bg_blur.jpg) no-repeat 50% 100% fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif, "宋体";
+}
+#container {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+    overflow: hidden;
+}
+.btn-group{
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	text-align: center;
+}
+button{
+	width: 120px;
+	height: 40px;
+	margin: 0;
+	cursor: pointer;
+	background: none;
+	border: 2px solid #fff;
+	color: #fff;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+button:hover{
+	border-color: black;
+}
+.layout {
+    float: left;
+    margin: 80px 0 0 120px;
+}
+/*基本样式*/
+
+.gb-basic {
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid #fff;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+/*简单的响应特效*/
+
+.gb-simple {
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid #fff;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+.gb-simple:hover, .gb-simple:active {
+    background-color: #fff;
+    color: #000;
+}
+/*带转换效果*/
+
+.gb-transition {
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid #fff;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+
+	-moz-transform: ease 0.4s;
+    -webkit-transition: ease 0.4s;
+    -ms-transition: ease 0.4s;
+    -o-transition: ease 0.4s;
+    transition: ease 0.4s;
+}
+.gb-transition:hover, .gb-transition:active {
+    background-color: #00B420;
+}
+/*飞入*/
+.gb-border-flyin{
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid #fff;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+
+	-moz-transform: ease 0.4s;
+    -webkit-transition: ease 0.4s;
+    -ms-transition: ease 0.4s;
+    -o-transition: ease 0.4s;
+    transition: ease 0.4s;
+    position: relative;
+}
+.gb-border-flyin .gb-line{
+	position: absolute;
+	-moz-transform: ease 0.4s;
+    -webkit-transition: ease 0.4s;
+    -ms-transition: ease 0.4s;
+    -o-transition: ease 0.4s;
+    transition: ease 0.4s;
+}
+.gb-border-flyin:hover .gb-line{
+	background: #fff;
+}
+.gb-border-flyin .gb-line-top{
+	width: 0px;
+	height: 2px;
+	left:-110%;
+	top: -2px;
+}
+.gb-border-flyin:hover .gb-line-top{
+    width: 100%;
+    left: -2px;
+}
+
+.gb-border-flyin .gb-line-right{
+	width: 2px;
+	height: 0px;
+	right: -2px;
+	top: -110%;
+}
+.gb-border-flyin:hover .gb-line-right{
+    height: 100%;
+    top: -2px;
+}
+
+.gb-border-flyin .gb-line-bottom{
+	width: 0px;
+	height: 2px;
+	right:-110%;
+	bottom: -2px;
+}
+.gb-border-flyin:hover .gb-line-bottom{
+    width: 100%;
+    right: -2px;
+}
+.gb-border-flyin .gb-line-left{
+	width: 2px;
+	height: 0px;
+	left: -2px;
+	bottom: -110%;
+}
+.gb-border-flyin:hover .gb-line-left{
+    height: 100%;
+    bottom: -2px;
+}
+/*变形*/
+.gb-transform{
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid #fff;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+
+	-moz-transform: ease 0.4s;
+    -webkit-transition: ease 0.4s;
+    -ms-transition: ease 0.4s;
+    -o-transition: ease 0.4s;
+    transition: ease 0.4s;	
+}
+.gb-transform:hover, .gb-transform:active{
+	background: #17bcb8;
+	border-color: #17bcb8;
+	width: 230px;
+}
+/*圆角*/
+.gb-radius{
+	display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid #06d85f;
+    text-align: center;
+    font-size: 18px;
+
+	-moz-transform: ease 0.4s;
+    -webkit-transition: ease 0.4s;
+    -ms-transition: ease 0.4s;
+    -o-transition: ease 0.4s;
+    transition: ease 0.4s;	
+    border-radius: 2px;
+    color: #06d85f;  
+}
+.gb-radius:hover, .gb-radius:active{
+	background: #06d85f;
+	border-color: #06d85f;
+	color: #fff;
+}
+/*边框高亮*/
+.gb-border-highlight{
+	display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid rgba(255, 255, 255, 0.25);
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+
+    position: relative;
+}
+.gb-border-highlight .gb-line{
+	position: absolute;
+	-moz-transform: ease-in-out 0.4s;
+    -webkit-transition: ease-in-out 0.4s;
+    -ms-transition: ease-in-out 0.4s;
+    -o-transition: ease-in-out 0.4s;
+    transition: ease-in-out 0.4s;
+}
+.gb-border-highlight:hover .gb-line{
+	background: #fff;
+}
+.gb-border-highlight .gb-line-top{
+	width: 0px;
+	height: 2px;
+	left:-2px;
+	top: -2px;
+}
+.gb-border-highlight:hover .gb-line-top{
+    width: 204px;
+}
+
+.gb-border-highlight .gb-line-right{
+	width: 2px;
+	height: 0px;
+	right: -2px;
+	bottom: -2px;
+}
+.gb-border-highlight:hover .gb-line-right{
+    height: 52px;
+}
+
+.gb-border-highlight .gb-line-bottom{
+	width: 0px;
+	height: 2px;
+	right: -2px;
+	bottom: -2px;
+}
+.gb-border-highlight:hover .gb-line-bottom{
+    width: 204px;
+}
+.gb-border-highlight .gb-line-left{
+	width: 2px;
+	height: 0px;
+	left:-2px;
+	top: -2px;
+}
+.gb-border-highlight:hover .gb-line-left{
+    height: 52px;
+}
+/*大圆角*/
+.gb-big-radius{
+	display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #60ada9;
+    text-align: center;
+    font-size: 18px;
+
+	-moz-transform: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+
+    letter-spacing: 1px;
+    border-radius: 26px;
+    color: #fff;  
+}
+.gb-big-radius:hover, .gb-big-radius:active{
+	background: #60ada9;
+}
+/*箭头右移*/
+.gb-arrow {
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid #fff;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    background: url('../img/arrow.png') no-repeat 145px center;
+
+	-moz-transform: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+.gb-arrow:hover, .gb-arrow:active {
+	background-position: 155px center;
+}
+/*scroll up*/
+.gb-scrollup {
+    display: block;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid #fff;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+
+	-moz-transform: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    position: relative;
+    border-radius: 3px;
+}
+.gb-scrollup-hover {
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+	-moz-transform: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    position: absolute;
+    background-color: #fff;
+    z-index: -1;
+}
+.gb-scrollup:hover .gb-scrollup-hover, .gb-scrollup:active .gb-scrollup-hover {
+	top: 0;
+}
+.gb-scrollup:hover, .gb-scrollup:active {
+    background-color: #fff;
+    color: #009acb;
+}
+
